@@ -212,3 +212,54 @@ footer {
     padding: 1.5rem;
     margin-top: 3rem;
 }
+
+
+
+
+
+/*Esto es de prueba y solo para que se adapte al telefono, lo hice por fuera y para poder usarlo en este mismo
+/* Media query para pantallas de teléfonos (menores a 768px) */
+@media (max-width: 768px) {
+    /* Ajustar el menú para que no se amontone */
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Ajustar los márgenes laterales del contenido */
+    main {
+        padding: 0 0.8rem;
+        margin: 1rem auto;
+    }
+
+    /* Reducir el ancho de la galería para que quepa bien en pantalla */
+    .galeria-grid {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        grid-template-columns: 1fr; /* Muestra los animales de 1 en 1 */
+    }
+
+    /* Quitar los márgenes fijos grandes que deforman el texto */
+    .margin-adopcion {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* Ajustar el tamaño de la tarjeta para móviles */
+    .seccion-tarjeta {
+        padding: 1rem;
+    }
+
+    .tarjeta-animal img {
+        width: 100%;
+        height: auto; /* Mantiene la proporción de la foto sin deformarla */
+        max-height: 250px;
+    }
+}
